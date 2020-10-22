@@ -1,0 +1,2 @@
+---
+<p align="center">By <a href="mailto:agustin.albinati@accenture.com?subject=[Streamlit]%20Covid%20Data%20Visualization">Agustin Albinati</a> | Data Source: <a href="https://github.com/CSSEGISandData/COVID-19">Johns Hopkins University</a></p>
