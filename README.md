@@ -7,8 +7,6 @@ This project goal is to help us better understand the virus behaviour
 &nbsp;
 &nbsp;
 
-👈 **To continue select "View Graphs" in the sidebar.**
-
 ## Credit
 
 Agustin Albinati, 
