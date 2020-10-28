@@ -100,8 +100,8 @@ pytest-mock==3.1.0
 python-dateutil
 python-utils
 pytz==2020.1
-pywin32==227
-pywinpty==0.5.7
+#pywin32==227
+#pywinpty==0.5.7
 pyzmq==19.0.1
 qtconsole==4.7.4
 QtPy==1.9.0
