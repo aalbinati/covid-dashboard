@@ -278,7 +278,7 @@ def showMode(mode, full_table, full_grouped, day_wise, country_wise):
     elif mode == 9:
         return dateGraph(full_grouped)
     elif mode == 10:
-        slider2 = st.sidebar.slider("Change N", 1, 10000, 100, 1)
+        slider2 = st.sidebar.slider("Change N", 1, 100000, 10000, 1)
         loga2 = st.sidebar.checkbox("Logarithmic Scale")
         return fromCaseN(full_grouped, full_table, slider2, loga2)
     elif mode == 11:
