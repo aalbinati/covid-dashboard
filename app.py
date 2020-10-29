@@ -45,10 +45,7 @@ def main():
     if app_mode == "Introduction":
         # Render the readme as markdown using st.markdown.
         readme_text = st.markdown(get_file_content_as_string("instructions.md"))
-        dicti = pickle.load(open("settings.p", "rb"))
-        dicti[get_session_id()] = 0
-        print(len(dicti))
-        pickle.dump(dicti, open("settings.p", "wb"))
+        openSess()
         st.sidebar.success('To continue select "View Graphs".')
     elif app_mode == "Show the source code":
         st.code(get_file_content_as_string("app.py"))
@@ -167,6 +164,8 @@ def main():
                 """
         st.markdown(html, unsafe_allow_html=True)
         dicti = pickle.load(open("settings.p", "rb"))
+        if get_session_id() not in dicti:
+            openSess()
         mode = dicti[get_session_id()]
         button = 0
         if st.button("Previous"):
@@ -1258,6 +1257,12 @@ def get_session_id():
 
     ctx = get_report_ctx()
     return ctx.session_id
+
+def openSess():
+    dicti = pickle.load(open("settings.p", "rb"))
+    dicti[get_session_id()] = 0
+    #print(len(dicti))
+    pickle.dump(dicti, open("settings.p", "wb"))
 
 if __name__ == "__main__":
     main()
