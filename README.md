@@ -1,7 +1,8 @@
 # Covid Data Visualization
 
 
-This project goal is to help us better understand the virus behaviour
+This project goal is to help us better understand the virus behaviour.  
+Go to https://covid.aalbinati.com to see it in action!
 
 &nbsp;
 &nbsp;
