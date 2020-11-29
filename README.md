@@ -1,4 +1,4 @@
-# Covid Data Visualization
+# Covid Data Visualization [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/aalbinati/covid-dashboard/app.py)
 
 
 This project goal is to help us better understand the virus behaviour.  
